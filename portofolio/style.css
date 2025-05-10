@@ -1,0 +1,187 @@
+/* Gaya umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+/* Navigasi */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section umum */
+section {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #0066cc;
+  font-size: 1.5rem;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+section li {
+  margin-bottom: 15px;
+}
+
+/* Gaya khusus untuk bagian profil */
+#profil {
+  background-color: #eaf4ff;
+  border-left: 5px solid #0066cc;
+  padding: 25px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+#profil ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+
+.foto-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#profil:hover {
+  background-color: #d6ecff;
+}
+
+#profil h2 {
+  color: #004c99;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+#profil h3 {
+  color: #0066cc;
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+#profil p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Animasi teks masuk saat hover */
+#profil p:hover {
+  color: #003366;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #0066cc;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  section h2, #profil h3 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
